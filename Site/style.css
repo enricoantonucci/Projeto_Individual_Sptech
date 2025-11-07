@@ -1,24 +1,200 @@
+  @import url("https://use.typekit.net/rpb1trw.css");
+
+body, * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 .navebar {
     background-color: rgb(6, 67, 6);
     height: 60px;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.savoia img {
+    height: 55px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.botoes1 {
+    display: flex;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.botoes1 a {
+    font-family: "myriad-pro", sans-serif;
+    color: #ffff;
+    text-decoration: none;
+    display: flex;
 }
 
 .logo img {
     height: auto;
     width: 150px;
-    
+    margin-top: 120px;  
+      
+}
+
+.botoes2 {
+    display: flex;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.botoes2 a {
+    font-family: "myriad-pro", sans-serif;
+    color: #ffff;
+    text-decoration: none;
 }
 
 .navebar2 {
     background-color: white;
+    display: flex;
     height: 60px;
     width: 100%;
+    height: 100px;
+}
+
+.PalmeirasStore img {
+    height: auto;
+    width: 150px;
+    margin-top: 25px; 
+    margin-left: 40px;
+}
+
+.PalmeirasPuma img{
+    height: auto;
+    width: 150px;
+    margin-top: 10px; 
+    margin-left: 60px;
+}
+
+.PalmeirasAvanti img {
+    height: auto;
+    width: 150px;
+    margin-top: 25px; 
+    margin-left: 360px;
+}
+
+.PalmeirasPay img {
+    height: auto;
+    width: 155px;
+    margin-top: 20px; 
+    margin-left: 100px;
 }
 
 .fundo {
     background-color: rgb(145, 232, 39);
-    height: 500px;
+    height: 1700px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.historia:hover {
+    height: 305px;
+    width: 96%;
+}
+
+.historia img {
+    height:100%;
+    width: auto;
+    border-radius: 20px;
+}
+
+.torcida {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.torcida:hover {
+    height: 305px;
+    width: 96%;
+}
+
+.torcida img {
+    height:100%;
+    width: 535px;
+    border-radius: 20px;
+}
+
+.quiz {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.quiz:hover {
+    height: 305px;
+    width: 96%;
+}
+
+.torcida {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.torcida:hover {
+    height: 305px;
+    width: 96%;
+}
+
+.titulos {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.titulos:hover {
+    height: 305px;
+    width: 96%;
+}
+
+.footer {
+    background-color: rgb(6, 67, 6);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
