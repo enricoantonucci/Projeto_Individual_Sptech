@@ -1,200 +1,539 @@
   @import url("https://use.typekit.net/rpb1trw.css");
 
-body, * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
+  body,
+  * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+  }
 
-.navebar {
-    background-color: rgb(6, 67, 6);
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-}
+  .navebar {
+      background-color: rgb(6, 67, 6);
+      height: 60px;
+      width: 100%;
+      max-width: 13000px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  }
 
-.savoia img {
-    height: 55px;
-    position: absolute;
-    top: 0;
-    left: 10px;
-}
+  .savoia img {
+      height: 55px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+  }
 
-.botoes1 {
-    display: flex;
-    gap: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
+  .botoes1 {
+      display: flex;
+      gap: 20px;
+  }
 
-.botoes1 a {
-    font-family: "myriad-pro", sans-serif;
-    color: #ffff;
-    text-decoration: none;
-    display: flex;
-}
+  .botoes1 a {
+      font-size: 20px;
+      padding: 20px;
+      font-family: "myriad-pro", sans-serif;
+      color: #ffff;
+      text-decoration: none;
+      display: flex;
+  }
 
-.logo img {
-    height: auto;
-    width: 150px;
-    margin-top: 120px;  
+  .logo img {
+      height: auto;
+      width: 150px;
+      margin-top: 120px;
+      margin-left: 35px;
+
+  }
+
+  .botoes2 {
+      font-size: 20px;
+      padding: 30px;
+      display: flex;
+      gap: 20px;
+  }
+
+  .botoes2 a {
+      font-family: "myriad-pro", sans-serif;
+      color: #ffff;
+      text-decoration: none;
+  }
+
+  .login_cor {
+      width: 70px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -20px;
+      margin-right: -55px;
+      border-radius: 03px;
+      background-color: rgb(57, 173, 156);
+  }
+
+
+  .login_cor:focus {
+      cursor: pointer;
+      transition: 0.5s;
+      transition-timing-function: linear;
+  }
+
+  .login_cor:active {
+      transform: translate(0, 2px);
+      border-bottom: 2px solid rgb(50, 50, 50);
+  }
+
+  .login_button button {
+      background: none;
+      border: none;
+      font-size: 15px;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(255, 242, 0);
+      text-decoration: none;
+  }
+
+  .cadastro_cor {
+      width: 100px;
+      height: 30px;
+      ;
+      display: flex;
+      margin-right: -155px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 03px;
+      background-color: rgb(57, 173, 156);
+  }
+
+  .cadastro_button button {
+      background: none;
+      border: none;
+      font-size: 15px;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(255, 242, 0);
+      text-decoration: none;
+  }
+
+  .cadastro_cor:focus {
+      cursor: pointer;
+      transition: 0.5s;
+      transition-timing-function: linear;
+  }
+
+  .cadastro_cor:active {
+      transform: translate(0, 2px);
+      border-bottom: 2px solid rgb(50, 50, 50);
+  }
+
+  .navebar2 {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      height: 60px;
+      width: 100%;
+      height: 100px;
+  }
+
+  .PalmeirasStore img {
+      height: auto;
+      width: 100%;
+      max-width: 150px;
+      margin-top: 25px;
+      margin-left: 40px;
+  }
+
+  .PalmeirasPuma img {
+      height: auto;
+      width: 100%;
+      max-width: 150px;
+      margin-top: 10px;
+      margin-left: 100px;
+  }
+
+  .PalmeirasAvanti img {
+      height: auto;
+      width: 150px;
+      margin-top: 25px;
+      margin-left: 345px;
+  }
+
+  .PalmeirasPay img {
+      height: auto;
+      width: 155px;
+      margin-top: 20px;
+      margin-left: 100px;
+  }
+
+  .fundo {
+      background-color: rgb(65, 105, 17);
+      height: 1700px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .historia {
+      display: flex;
+      background-color: transparent;
+      height: 300px;
+      width: 95%;
+      margin-top: 20px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
       
-}
+  }
 
-.botoes2 {
-    display: flex;
-    gap: 20px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
+  .historia:hover {
+      height: 305px;
+      width: 96%;
+  }
 
-.botoes2 a {
-    font-family: "myriad-pro", sans-serif;
-    color: #ffff;
-    text-decoration: none;
-}
+  .historia img {
+      height: 100%;
+      width: auto;
+      margin-right: 15px;
+      border-radius: 20px;
+  }
 
-.navebar2 {
-    background-color: white;
-    display: flex;
-    height: 60px;
-    width: 100%;
-    height: 100px;
-}
+  .texto_historia {
+      display: flex;
+      padding: 20px;
+      height: 275px;
+      margin-top: 10px;
+      width: 882px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+      background-color: rgb(255, 255, 255);
+      border: 5px solid rgb(65, 105, 17);
+      ;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-.PalmeirasStore img {
-    height: auto;
-    width: 150px;
-    margin-top: 25px; 
-    margin-left: 40px;
-}
+  }
 
-.PalmeirasPuma img{
-    height: auto;
-    width: 150px;
-    margin-top: 10px; 
-    margin-left: 60px;
-}
+  .texto_historia a {
+      background: none;
+      border: none;
+      font-size: 20px;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(65, 105, 17);
+      text-decoration: none;
 
-.PalmeirasAvanti img {
-    height: auto;
-    width: 150px;
-    margin-top: 25px; 
-    margin-left: 360px;
-}
+  }
 
-.PalmeirasPay img {
-    height: auto;
-    width: 155px;
-    margin-top: 20px; 
-    margin-left: 100px;
-}
+  .texto_historia:hover {
+      height: 281px;
+      width: 890px;
+  }
 
-.fundo {
-    background-color: rgb(145, 232, 39);
-    height: 1700px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  .botao_historia {
+      display: flex;
+      align-items: end;
+  }
 
-.historia {
-    background-color: rgb(255, 255, 255);
-    height: 300px;
-    width: 95%;
-    margin-top: 20px;
-    border-radius: 20px;
-    transition-duration: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
+  .texto_historia button {
 
-.historia:hover {
-    height: 305px;
-    width: 96%;
-}
+      height: 40px;
+      height: 45px;
+      background-color: transparent;
+      border-radius: 5px;
+      padding: 5px;
+      border: 3px solid rgb(65, 105, 17);
+      font-size: auto;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(65, 105, 17);
+      text-decoration: none;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
-.historia img {
-    height:100%;
-    width: auto;
-    border-radius: 20px;
-}
+  }
 
-.torcida {
-    background-color: rgb(255, 255, 255);
-    height: 300px;
-    width: 95%;
-    margin-top: 20px;
-    border-radius: 20px;
-    transition-duration: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
+  .torcida {
+      display: flex;
+      background-color: transparent;
+      height: 300px;
+      width: 95%;
+      margin-top: 20px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+      
+  }
 
-.torcida:hover {
-    height: 305px;
-    width: 96%;
-}
+  .torcida:hover {
+      height: 305px;
+      width: 96%;
+  }
 
-.torcida img {
-    height:100%;
-    width: 535px;
-    border-radius: 20px;
-}
+  .texto_torcida {
+      display: flex;
+      padding: 20px;
+      height: 275px;
+      margin-top: 10px;
+      margin-left: 15px;
+      width: 882px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+      background-color: rgb(255, 255, 255);
+      border: 5px solid rgb(65, 105, 17);
+      ;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-.quiz {
-    background-color: rgb(255, 255, 255);
-    height: 300px;
-    width: 95%;
-    margin-top: 20px;
-    border-radius: 20px;
-    transition-duration: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
+  }
 
-.quiz:hover {
-    height: 305px;
-    width: 96%;
-}
+  .texto_torcida a {
+      background: none;
+      border: none;
+      font-size: 20px;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(65, 105, 17);
+      text-decoration: none;
 
-.torcida {
-    background-color: rgb(255, 255, 255);
-    height: 300px;
-    width: 95%;
-    margin-top: 20px;
-    border-radius: 20px;
-    transition-duration: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
+  }
 
-.torcida:hover {
-    height: 305px;
-    width: 96%;
-}
+  .texto_torcida:hover {
+      height: 281px;
+      width: 890px;
+  }
 
-.titulos {
-    background-color: rgb(255, 255, 255);
-    height: 300px;
-    width: 95%;
-    margin-top: 20px;
-    border-radius: 20px;
-    transition-duration: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
+  .botao_torcida {
+      display: flex;
+      align-items: end;
+  }
 
-.titulos:hover {
-    height: 305px;
-    width: 96%;
-}
+  .texto_torcida button {
 
-.footer {
-    background-color: rgb(6, 67, 6);
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-}
+      height: 40px;
+      height: 45px;
+      background-color: transparent;
+      border-radius: 5px;
+      padding: 5px;
+      border: 3px solid rgb(65, 105, 17);
+      font-size: auto;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(65, 105, 17);
+      text-decoration: none;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  }
+
+  .torcida img {
+      height: 100%;
+      width: 535px;
+      border-radius: 20px;
+  }
+
+  .titulos {
+      display: flex;
+      background-color: transparent;
+      height: 300px;
+      width: 95%;
+      margin-top: 20px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+      
+  }
+
+  .texto_titulos {
+      display: flex;
+      padding: 20px;
+      height: 275px;
+      margin-top: 10px;
+      margin-left: 15px;
+      width: 875px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+      background-color: rgb(255, 255, 255);
+      border: 5px solid rgb(65, 105, 17);
+      ;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .texto_titulos:hover {
+      height: 281px;
+      width: 890px;
+  }
+
+  .titulos:hover {
+      height: 305px;
+      width: 96%;
+  }
+
+  .titulos img {
+      height: 100%;
+      width: 540px;
+      border-radius: 20px;
+  }
+
+  .texto_titulos a {
+      background: none;
+      border: none;
+      font-size: 20px;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(65, 105, 17);
+      text-decoration: none;
+
+  }
+
+  .texto_titulos:hover {
+      height: 281px;
+      width: 890px;
+  }
+
+  .botao_titulos {
+      display: flex;
+      align-items: end;
+  }
+
+  .texto_titulos button {
+
+      height: 40px;
+      height: 45px;
+      background-color: transparent;
+      border-radius: 5px;
+      padding: 5px;
+      border: 3px solid rgb(65, 105, 17);
+      font-size: auto;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(65, 105, 17);
+      text-decoration: none;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  }
+
+  .estadio:hover {
+      height: 305px;
+      width: 96%;
+  }
+
+  .estadio {
+      display: flex;
+      background-color: transparent;
+      height: 300px;
+      width: 95%;
+      margin-top: 20px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+      
+  }
+
+  .estadio img {
+      height: 100%;
+      width: 540px;
+      border-radius: 20px;
+  }
+
+  .texto_estadio {
+      flex-direction: row;
+      height: 275px;
+      margin-top: 10px;
+      margin-left: 15px;
+      width: 875px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+      background-color: rgb(255, 255, 255);
+      border: 5px solid rgb(65, 105, 17);
+      ;
+  }
+
+  .texto_estadio:hover {
+      height: 281px;
+      width: 890px;
+  }
+
+
+  .info {
+      height: 2000px;
+      width: 96%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .SobreMim {
+      background-color: white;
+      height: 300px;
+      width: 600px;
+      margin-top: 20px;
+      margin-right: 50px;
+      margin-left: 40px;
+      transition-duration: 0.3s;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .avatarSobreMim {
+      margin-top: 15px;
+      margin-left: 25px;
+      height: 270px;
+      width: 200px;
+      background-color: green;
+  }
+
+  .SobreMim:hover {
+      height: 305px;
+      width: 895px;
+  }
+
+  .SobreMim img {
+      height: 100%;
+      width: 100%;
+  }
+
+  .SobreMim,
+  texto_sobremim {
+      height: 300px;
+      width: 250px;
+      background-color: white;
+  }
+
+  .quiz {
+      display: flex;
+      justify-content: end;
+      background-color: white;
+      height: 300px;
+      width: 600px;
+      margin-top: 20px;
+      margin-right: 50px;
+      margin-left: 40px;
+      transition-duration: 0.3s;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .avatarQuiz {
+      margin-top: 15px;
+      margin-right: 25px;
+      height: 270px;
+      width: 200px;
+      background-color: green;
+  }
+
+  .quiz:hover {
+      height: 305px;
+      width: 895px;
+  }
+
+  .quiz img {
+      height: 100%;
+      width: 100%;
+  }
+
+  .quiz,
+  texto_quiz {
+      height: 300px;
+      width: 250px;
+      background-color: white;
+  }
+
+
+
+
+  .footer {
+      background-color: rgb(6, 67, 6);
+      height: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  }
