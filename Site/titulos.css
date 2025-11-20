@@ -137,62 +137,118 @@
   
   .fundo {
       background-color: rgb(65, 105, 17);
-      height: 3100px;
+      height: 2000px;
       width: 100%;
-      display: flex;
-      flex-direction: column;
+      margin-top: 10px;
+      justify-content: center;
       align-items: center;
-  }
-
-  .texto_titulos {
+      flex-direction: column;
       display: flex;
-      flex-direction: column;
-      padding: 30px;
-      height: 3000px;
-      width: 90%;
-      margin-top: 10px;
-      transition-duration: 0.3s;
-      background-color: transparent;
   }
 
-  .texto_titulos img{
-    border-radius: 30px;
-    margin-top: 40px;
-    height: 235px;
-    width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  .bloco1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(65, 105, 17);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
 
-  .texto_titulos :hover {
-    height: 220px;
-    width: 235px;
-    transition-duration: 0,3s;
+  .bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(65, 105, 17);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
 
-  .texto_titulos2 {
-     display: flex;
-     align-items: end;
-      flex-direction: column;
-      padding: 30px;
-      height: 3000px;
-      width: 90%;
-      margin-top: 10px;
-      transition-duration: 0.3s;
-      background-color: transparent;
-      
+  .bloco_imagem1{
+      display: flex;
+      align-items: start;
+      height: 300px;
+      width: 50%;
+      background-color: white;
+      border: 5px solid green;
   }
 
-  .texto_titulos2 img {
-    border-radius: 30px;
-    margin-top: 40px;
-    height: 235px;
-    width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  .bloco_imagem1 img {
+    padding: 20px;
+        height: 300px;
+        width: 250px;
   }
-   .texto_titulos2 :hover {
-    height: 220px;
-    width: 235px;
-    transition-duration: 0,3s;
+
+  .texto_bloco1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: transparent;
+    height: 300px;
+    width: 400px;
+  }
+
+  .texto_bloco1 a {
+    background: none;
+      border: none;
+      font-size:15 5px;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(65, 105, 17);
+      text-decoration: none;
+  }
+
+
+  .bloco_imagem{
+      display: flex;
+      align-items: start;
+      height: 300px;
+      width: 50%;
+      background-color: white;
+      border: 5px solid green;
+  }
+
+  .bloco_imagem img {
+        height: 250px;
+        width: 250px;
+  }
+
+  .texto_bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: transparent;
+    height: 230px;
+    width: 220px;
+  }
+
+  .texto_bloco a {
+    background: none;
+      border: none;
+      font-size:15 5px;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(65, 105, 17);
+      text-decoration: none;
+  }
+
+  .bloco_imagem {
+    display: flex;
+      justify-content: end;
+      padding: 20px;
+      height: 300px;
+      margin-left: 130px;
+      margin-right: 50px;
+      width: 50%;
+      background-color: white;
+      border: 5px solid green;
+  }
+
+  .bloco_imagem img{
+    height: 250px;
+    width: 250px;
+
   }
 
   .footer {
