@@ -199,21 +199,6 @@
       text-decoration: none;
   }
 
-
-  .bloco_imagem{
-      display: flex;
-      align-items: start;
-      height: 300px;
-      width: 50%;
-      background-color: white;
-      border: 5px solid green;
-  }
-
-  .bloco_imagem img {
-        height: 250px;
-        width: 250px;
-  }
-
   .texto_bloco {
     display: flex;
     align-items: center;
@@ -235,10 +220,10 @@
 
   .bloco_imagem {
     display: flex;
-      justify-content: end;
+      justify-content: start;
       padding: 20px;
       height: 300px;
-      margin-left: 130px;
+      margin-left: 50px;
       margin-right: 50px;
       width: 50%;
       background-color: white;
