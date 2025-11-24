@@ -111,9 +111,8 @@
                         <button onclick="submeter()" id="btnSubmeter">Confirmar</button>
                         <button onclick="avancar()" id="btnProx" disabled>Próximo</button>
                         <button onclick="tentarNovamente()" id="btnTentarNovamente" disabled>Tentar novamente</button>
-                        <button onclick="desempenho()" id="btnConcluir" disabled>Desempenho</button>
+                        <button id="desempenho"><a href="dashboard.html">Desempenho</a></button>
                     </div>
-
                 </div>
 
             </div>
@@ -336,6 +335,7 @@
         document.getElementById('jogo').style.display = "flex"
         document.getElementById('imagem').style.display = "none"
         document.getElementById('btnIniciarQuiz').style.display = "none"
+        document.getElementById('desempenho').style.display = "none"
 
         document.getElementById('qtdQuestoes').innerHTML = quantidadeDeQuestoes
 
@@ -476,11 +476,11 @@
             textoParaMensagemFinal = "Vish, você não é Palmeirense sai daqui!"
             classComCoresParaMensagemFinal = "text-danger-with-bg"
         }
-        else if (porcentagemFinalDeAcertos > 0.3 && porcentagemFinalDeAcertos < 0.9) {
+        else if (porcentagemFinalDeAcertos > 0.3 && porcentagemFinalDeAcertos < 0.76) {
             textoParaMensagemFinal = "Hummmm, parece que você é um infiltrado hein"
             classComCoresParaMensagemFinal = "text-warning-with-bg"
         }
-        else if (porcentagemFinalDeAcertos >= 0.9) {
+        else if (porcentagemFinalDeAcertos >= 0.76) {
             textoParaMensagemFinal = "Avanti Palestra, você é um dos meus"
             classComCoresParaMensagemFinal = "text-success-with-bg"
         }
@@ -491,7 +491,7 @@
         document.getElementById('msgFinal').innerHTML = textoParaMensagemFinal
         document.getElementById('msgFinal').classList.add(classComCoresParaMensagemFinal)
         document.getElementById('spanPontuacaoFinal').innerHTML = pontuacaoFinal
-
+        document.getElementById('desempenho').style.display = "flex"
         document.getElementById('jogo').classList.add("text-new-gray")
 
         btnProx.disabled = true

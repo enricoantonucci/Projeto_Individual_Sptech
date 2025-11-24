@@ -117,6 +117,11 @@ body {
   }
 
   .botoeiras {
+    display: flex;
+    justify-content: center;
+    gap:10px; 
+    align-items: center;
+    flex-direction: row;
     height: 50px;
     width: 100%;
   }
@@ -130,6 +135,25 @@ body {
     font-family: "myriad-pro", sans-serif;
     color: white;
     font-size: 13px;
+    text-decoration: none;
+  }
+
+  .botoeiras a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botoeiras a {
+    height: 30px;
+    border-radius: 5px;
+    gap: 40px;
+    width: 120px;
+    background-color: green;
+    font-family: "myriad-pro", sans-serif;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
   }
 
 .flex-colunar {
