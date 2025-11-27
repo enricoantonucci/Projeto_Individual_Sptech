@@ -49,99 +49,18 @@
   }
 
   .botoes2 {
-      font-size: 20px;
-      padding: 30px;
       display: flex;
       gap: 20px;
   }
 
   .botoes2 a {
+      font-size: 20px;
+      padding: 20px;
       font-family: "myriad-pro", sans-serif;
       color: #ffff;
       text-decoration: none;
-  }
-
-  .login_cor {
-      width: 70px;
-      height: 30px;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: -20px;
-      margin-right: -55px;
-      border-radius: 03px;
-      background-color: rgb(57, 173, 156);
   }
-
-
-  .login_cor:focus {
-      cursor: pointer;
-      transition: 0.5s;
-      transition-timing-function: linear;
-  }
-
-  .login_cor:active {
-      transform: translate(0, 2px);
-      border-bottom: 2px solid rgb(50, 50, 50);
-  }
-
-  .login_button button {
-      background: none;
-      border: none;
-      font-size: 15px;
-      font-family: "myriad-pro", sans-serif;
-      color: rgb(255, 242, 0);
-      text-decoration: none;
-  }
-
-  .login_cor a {
-    background: none;
-      border: none;
-      font-size: 15px;
-      font-family: "myriad-pro", sans-serif;
-      color: rgb(255, 242, 0);
-      text-decoration: none;
-  }
-
-  .cadastro_cor {
-      width: 100px;
-      height: 30px;
-      display: flex;
-      margin-right: -155px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 03px;
-      background-color: rgb(57, 173, 156);
-  }
-
-  .cadastro_button button {
-      background: none;
-      border: none;
-      font-size: 15px;
-      font-family: "myriad-pro", sans-serif;
-      color: rgb(255, 242, 0);
-      text-decoration: none;
-  }
-
-  .cadastro_cor:focus {
-      cursor: pointer;
-      transition: 0.5s;
-      transition-timing-function: linear;
-  }
-
-  .cadastro_cor:active {
-      transform: translate(0, 2px);
-      border-bottom: 2px solid rgb(50, 50, 50);
-  }
-
-.cadastro_cor a {
-    background: none;
-      border: none;
-      font-size: 15px;
-      font-family: "myriad-pro", sans-serif;
-      color: rgb(255, 242, 0);
-      text-decoration: none;
-}
 
   .navebar2 {
       background-color: rgb(65, 105, 17);
