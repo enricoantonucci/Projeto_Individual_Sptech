@@ -51,7 +51,17 @@
       </div>
       <div class="container">
         <div class="card card-cadastro">
-          <h2>Bem-vindo!</h2>
+          <div class="titulo_cadastro">
+                        <div class="img">
+                            <img src="Imagens/palestra logo.png" alt="">
+                        </div>
+                        <div class="letras_cadastro">
+                            <i>
+                                <h2>Cadastre-se!</h2>
+                            </i>
+                        </div>
+                    </div>
+          
           <div class="formulario">
             <!--
                          Para inserir mais um campo, copie uma das inputs abaixo.
@@ -73,7 +83,7 @@
               <span>Confirmação da Senha:</span>
               <input id="confirmacao_senha_input" type="password" placeholder="******" />
             </div>
-            <button class="botao" onclick="cadastrar()">Cadastrar</button>
+            <button class="cadastrar_cor" onclick="cadastrar()">Cadastrar</button>
           </div>
           <div id="div_aguardar" class="loading-div">
             <img src="./assets/circle-loading.gif" id="loading-gif" />
@@ -104,15 +114,17 @@
     var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
     // Verificando se há algum campo em branco
-    if (
-      nomeVar == "" ||
-      emailVar == "" ||
-      senhaVar == "" ||
-      confirmacaoSenhaVar == ""
-    ) {
+    if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
-        "(Mensagem de erro para todos os campos em branco)";
+        "Preencha todos os campos!";
+
+      finalizarAguardar();
+      return false;
+    }if (emailVar.indexOf("@") == -1) {
+      cardErro.style.display = "block";
+      mensagem_erro.innerHTML =
+        "Erro! O seu email deve conter '@' ";
 
       finalizarAguardar();
       return false;

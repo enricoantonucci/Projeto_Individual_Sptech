@@ -195,6 +195,10 @@ body {
       align-items: center;
   }
 
+.header h1 {
+  margin: 0;
+}
+
 /* MISSÃO VISÃO VALORES */
 
 .social {
@@ -402,24 +406,31 @@ body {
 
 /* FORMULARIO */
 
-.alerta_erro{
+.alerta_erro {
   display: flex;
   justify-content: flex-end;
+  font-size: 15px;
+  font-family: "myriad-pro", sans-serif;
+  color: rgb(255, 242, 0);
+  text-decoration: none;
 }
 
 .card_erro {
   display: none;
-  background-color: #fff;
-  color: black;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  background-color: #064306;
+  color: white;
   width: 230px;
-  position: fixed;
-  border-radius: 4px;
-  border: #ED145B 3px solid;
+  border-radius: 10px;
+  border: rgb(255, 255, 255) 3px solid;
   padding: 10px;
   margin-right: 10%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.card_erro #mensagem_erro{
+.card_erro #mensagem_erro {
   font-weight: 500;
   font-size: 20px;
 }
