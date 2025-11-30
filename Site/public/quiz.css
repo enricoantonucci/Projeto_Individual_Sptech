@@ -156,6 +156,55 @@ body {
     text-decoration: none;
   }
 
+  .position_button {
+    height: 50px;
+    width: 30;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desempenho_cor {
+      width: 130px;
+      height: 30px;;
+      display: flex;
+      margin-right: -95px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 03px;
+      background-color: rgb(57, 173, 156);
+  }
+
+  .desempenho_button button {
+      background: none;
+      border: none;
+      font-size: 15px;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(255, 242, 0);
+      text-decoration: none;
+  }
+
+  .desempenho_cor:focus {
+      cursor: pointer;
+      transition: 0.5s;
+      transition-timing-function: linear;
+  }
+
+  .desempenho_cor:active {
+      transform: translate(0, 2px);
+      border-bottom: 2px solid rgb(50, 50, 50);
+  }
+
+  .desempenho_cor a {
+    background: none;
+      border: none;
+      font-size: 15px;
+      font-family: "myriad-pro", sans-serif;
+      color: rgb(255, 242, 0);
+      text-decoration: none;
+  }
+
 .flex-colunar {
     display: flex;
     flex-direction: column;

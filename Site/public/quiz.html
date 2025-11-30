@@ -32,9 +32,14 @@
             <i><a href="titulos.html">TÍTULOS</a></i>
             <i><a href="estadio.html">ESTÁDIO</a></i>
             <i><a href="sobremim.html">SOBRE MIM</a></i>
-
         </div>
-
+        <div class="position_button">
+            <div class="desempenho_cor">
+                <div class="desempenho_button">
+                    <button><a href="dashboard.html">DESEMPENHO</a></button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -441,7 +446,7 @@
             textoParaMensagemFinal = "Hummmm, parece que você é um infiltrado hein";
             classComCoresParaMensagemFinal = "text-warning-with-bg";
         } else if (porcentagemFinalDeAcertos >= 0.76) {
-            textoParaMensagemFinal = "Avanti Palestra, você é um dos meus";
+            textoParaMensagemFinal = "Avanti Palestra, você é um dos meus!";
             classComCoresParaMensagemFinal = "text-success-with-bg";
         }
 
@@ -468,8 +473,6 @@
     }
 
     function desempenho(pontuacao, erros, idUsuario) {
-        
-        document.getElementById('msgFinal').innerHTML += "<br><br><b>Salvando resultado... aguarde...</b>";
 
         fetch("/quiz/registrar", {
             method: "POST",

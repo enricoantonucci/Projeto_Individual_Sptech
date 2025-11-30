@@ -3,8 +3,6 @@ window.onload = carregarDashboard;
 function carregarDashboard() {
     const idUsuario = sessionStorage.ID_USUARIO;
 
-    console.log(`ID do Usuário lido na função: ${idUsuario}`);
-
     if (!idUsuario) {
         console.error("ID do usuário não encontrado na sessão.");
         return;
