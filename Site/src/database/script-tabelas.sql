@@ -38,3 +38,4 @@ id_questoes,
     FOREIGN KEY (fk_idQuestoes) REFERENCES questoes (id_questoes),
     FOREIGN KEY (fk_idQuiz) REFERENCES quiz (id_quiz)
 );
+

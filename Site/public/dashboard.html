@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Dashboard</title>
+    <title>Palmeiras | Desempenho</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <title> Palmeiras | Dashboard</title>
+    <link rel="icon" href="Imagens/Palmeiras Logo.webp">
 </head>
 
 <body>
@@ -48,21 +52,30 @@
 
             <div class="kpis">
                 <div class="kpi1">
-                    <i><H3>QUANTIDADE DE TENTATIVAS:</H3></i>
+                    <i>
+                        <H3>TENTATIVAS REALIZADAS:</H3>
+                    </i>
+                    <span id="kpi_tentativas">0</span>
                 </div>
                 <div class="kpi2">
-                    <i><H3>APROVEITAMENTO NO QUIZ:</H3></i>
+                    <i>
+                        <H3>SOMATÓRIA DE TODOS ACERTOS</H3>
+                    </i>
+                    <span id="kpi_aproveitamento">0%</span>
                 </div>
                 <div class="kpi3">
-                    <i><H3>SEU RANKING NO SITE:</H3></i>
+                    <i>
+                        <H3>MELHOR PONTUAÇÃO (MAX):</H3>
+                    </i>
+                    <span id="kpi_melhor_pontuacao">0 /20</span>
                 </div>
             </div>
             <div class="graficos">
                 <div class="grafico1">
-                    <H3>gráfico pizza</H3>
+                    <canvas id="graficoPizzaAcertos"></canvas>
                 </div>
                 <div class="grafico2">
-                    <H3>gráfico barras</H3>
+                    <canvas id="graficoHistorico"></canvas>
                 </div>
             </div>
         </div>

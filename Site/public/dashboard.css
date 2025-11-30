@@ -138,7 +138,7 @@
     height: 500px;
     width: 80%;
     margin-bottom: 70px;
-    background-color: rgb(57, 173, 156);
+    background-color: rgb(65, 105, 17);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 5px;
     padding: 20px;
@@ -160,10 +160,21 @@
     font-size: 20px;
       padding: 10px;
       font-family: "myriad-pro", sans-serif;
-      color: #ffffff;
+      color: rgb(65, 105, 17);
       text-decoration: none;
       display: flex;
       justify-content: start;
+  }
+
+  .kpis span {
+    font-size: 35px;
+      padding: 10px;
+      font-family: "myriad-pro", sans-serif;
+      color: #ffffff;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-shadow: 1px 1px 1px black;
   }
  
@@ -199,6 +210,17 @@
 }
 
 .graficos H3 {
+    font-size: 20px;
+      padding: 10px;
+      font-family: "myriad-pro", sans-serif;
+      color: #ffffff;
+      text-decoration: none;
+      display: flex;
+      justify-content: start;
+      text-shadow: 1px 1px 1px black;
+}
+
+.graficos canvas {
     font-size: 20px;
       padding: 10px;
       font-family: "myriad-pro", sans-serif;

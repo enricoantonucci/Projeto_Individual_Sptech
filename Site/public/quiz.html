@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo - Quiz</title>
+    <title> Palmeiras | Quiz</title>
+    <link rel="icon" href="Imagens/Palmeiras Logo.webp">
     <link rel="stylesheet" href="quiz.css">
 </head>
 
@@ -33,7 +34,7 @@
             <i><a href="sobremim.html">SOBRE MIM</a></i>
 
         </div>
-        
+
     </div>
 
 
@@ -123,12 +124,12 @@
 
 </html>
 <script>
-if (!sessionStorage.ID_USUARIO) {
-    window.location.href = "login.html"
-}
+    // Verifica login
+    if (!sessionStorage.ID_USUARIO) {
+        window.location.href = "login.html";
+    }
 
     const listaDeQuestoes = [
-
         {
             pergunta: "Qual foi o nome original do clube, fundado em 1914 por membros da colônia italiana em São Paulo?",
             alternativaA: "Associazione Sportiva Itália",
@@ -137,7 +138,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Circolo Esportivo Itália",
             alternativaCorreta: "alternativaC"
         },
-
         {
             pergunta: "Qual é o nome do estádio atual do Palmeiras, inaugurado em 2014 no local do antigo Palestra Itália?",
             alternativaA: "Arena Palmeiras",
@@ -146,7 +146,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Allianz Parque",
             alternativaCorreta: "alternativaD"
         },
-
         {
             pergunta: "Qual jogador foi o goleiro ídolo do Palmeiras, conhecido pela frase 'Aqui é Palmeiras!' dita em uma disputa de pênaltis pela Libertadores de 2000?",
             alternativaA: "Leão",
@@ -155,7 +154,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Sérgio",
             alternativaCorreta: "alternativaC"
         },
-
         {
             pergunta: "Quantos títulos do Campeonato Brasileiro (a partir de 1971, incluindo Taça Brasil e Robertão, conforme unificação da CBF) o Palmeiras possui em sua história, até o final de 2024?",
             alternativaA: "10",
@@ -164,7 +162,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "13",
             alternativaCorreta: "alternativaB"
         },
-
         {
             pergunta: "Qual é o jogador com mais partidas disputadas pelo Palmeiras em toda a história, com mais de 900 jogos?",
             alternativaA: "Dudu",
@@ -173,7 +170,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Ademir da Guia",
             alternativaCorreta: "alternativaD"
         },
-
         {
             pergunta: "Em que ano o Palmeiras conquistou seu primeiro título da Copa Libertadores da América?",
             alternativaA: "1998",
@@ -182,7 +178,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "2020",
             alternativaCorreta: "alternativaB"
         },
-
         {
             pergunta: "Quem foi o autor do gol de pênalti que garantiu o título da Copa Libertadores de 1999, na final contra o Deportivo Cali (COL)?",
             alternativaA: "Paulo Nunes",
@@ -191,7 +186,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Zinho",
             alternativaCorreta: "alternativaD"
         },
-
         {
             pergunta: "Em que ano o Società Sportiva Palestra Italia mudou oficialmente o seu nome para Sociedade Esportiva Palmeiras, durante o período da Segunda Guerra Mundial?",
             alternativaA: "1939",
@@ -200,7 +194,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "1951",
             alternativaCorreta: "alternativaB"
         },
-
         {
             pergunta: "Antes da reconstrução e da adoção do nome Allianz Parque, qual era o nome popular do estádio do Palmeiras?",
             alternativaA: "Arena Pacaembu",
@@ -209,7 +202,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Estádio do Canindé",
             alternativaCorreta: "alternativaB"
         },
-
         {
             pergunta: "Qual jogador, que brilhou na 'Academia' (anos 60/70), é conhecido pela torcida como 'O Divino'?",
             alternativaA: "Ademir da Guia",
@@ -218,7 +210,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Djalminha",
             alternativaCorreta: "alternativaA"
         },
-
         {
             pergunta: "Qual atacante do Palmeiras marcou dois gols no jogo de volta da final da Copa do Brasil de 2015, contra o Santos, levando a decisão para os pênaltis?",
             alternativaA: "Lucas Barrios",
@@ -227,7 +218,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Dudu",
             alternativaCorreta: "alternativaD"
         },
-
         {
             pergunta: "Quantos títulos de Copa do Brasil o Palmeiras já conquistou em sua história até o final de 2024?",
             alternativaA: "3",
@@ -236,7 +226,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "5",
             alternativaCorreta: "alternativaB"
         },
-
         {
             pergunta: "Quantos títulos consecutivos de Campeonato Brasileiro o Palmeiras conquistou na sua história?",
             alternativaA: "1",
@@ -245,7 +234,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "2",
             alternativaCorreta: "alternativaD"
         },
-
         {
             pergunta: "Quem é o maior artilheiro da história do Palmeiras, com 323 gols marcados entre 1916 e 1931?",
             alternativaA: "Evair",
@@ -254,7 +242,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Heitor",
             alternativaCorreta: "alternativaD"
         },
-
         {
             pergunta: "Qual jogador do Palmeiras detém o recorde de mais gols marcados na história do 'Derby Paulista' (clássico contra o Corinthians)?",
             alternativaA: "César Maluco",
@@ -263,7 +250,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Evair",
             alternativaCorreta: "alternativaA"
         },
-
         {
             pergunta: "Qual jogador fez o gol do Palmeiras na final da libertadores recebendo um passe do Mayke e levando o jogo para a prorrogação?",
             alternativaA: "Deyverson",
@@ -272,7 +258,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Piquerez",
             alternativaCorreta: "alternativaB"
         },
-
         {
             pergunta: "Qual jogador era conhecido como Mago?",
             alternativaA: "Valdivia",
@@ -281,7 +266,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Robinho",
             alternativaCorreta: "alternativaA"
         },
-
         {
             pergunta: "Qual foi o adversário que o Palmeiras venceu na final, no Maracanã, para conquistar a Copa Rio de 1951, considerado o primeiro torneio mundial interclubes oficial da FIFA/CONMEBOL?",
             alternativaA: "Estrela Vermelha (Lugoslávia)",
@@ -290,7 +274,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Juventus (Itália)",
             alternativaCorreta: "alternativaD"
         },
-
         {
             pergunta: "Quem foi o adversário do Palmeiras na final da Copa Libertadores de 2021, disputada em Montevidéu?",
             alternativaA: "Santos",
@@ -299,7 +282,6 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Flamengo",
             alternativaCorreta: "alternativaD"
         },
-
         {
             pergunta: "Qual era o apelido dado ao Edmundo?",
             alternativaA: "Amostrado",
@@ -308,47 +290,45 @@ if (!sessionStorage.ID_USUARIO) {
             alternativaD: "Pitbull cachorro louco",
             alternativaCorreta: "alternativaC"
         }
+    ];
 
-    ]
-
-    // variáveis globais    
-    let numeroDaQuestaoAtual = 0
-    let pontuacaoFinal = 0
-    let tentativaIncorreta = 0
-    let certas = 0
-    let erradas = 0
-    let quantidadeDeQuestoes = listaDeQuestoes.length
-    // let isUltima = numeroDaQuestaoAtual == quantidadeDeQuestoes-1 ? true : false
+    let numeroDaQuestaoAtual = 0;
+    let pontuacaoFinal = 0;
+    let tentativaIncorreta = 0;
+    let certas = 0;
+    let erradas = 0;
+    let quantidadeDeQuestoes = listaDeQuestoes.length;
 
     function onloadEsconder() {
-        document.getElementById('pontuacao').style.display = "none"
-        document.getElementById('jogo').style.display = "none"
+        document.getElementById('pontuacao').style.display = "none";
+        document.getElementById('jogo').style.display = "none";
+        // Garante que o botão de desempenho comece oculto
+        if(document.getElementById('desempenho')) {
+            document.getElementById('desempenho').style.display = "none";
+        }
     }
 
     function iniciarQuiz() {
-        document.getElementById('pontuacao').style.display = "flex"
-        document.getElementById('jogo').style.display = "flex"
-        document.getElementById('imagem').style.display = "none"
-        document.getElementById('btnIniciarQuiz').style.display = "none"
-        document.getElementById('desempenho').style.display = "none"
+        document.getElementById('pontuacao').style.display = "flex";
+        document.getElementById('jogo').style.display = "flex";
+        document.getElementById('imagem').style.display = "none";
+        document.getElementById('btnIniciarQuiz').style.display = "none";
+        document.getElementById('desempenho').style.display = "none"; // Garante que continua oculto
 
-        document.getElementById('qtdQuestoes').innerHTML = quantidadeDeQuestoes
+        document.getElementById('qtdQuestoes').innerHTML = quantidadeDeQuestoes;
+        preencherHTMLcomQuestaoAtual(0);
 
-        preencherHTMLcomQuestaoAtual(0)
-
-        btnSubmeter.disabled = false
-        btnProx.disabled = true
-        // btnConcluir.disabled = true
-        btnTentarNovamente.disabled = true
+        btnSubmeter.disabled = false;
+        btnProx.disabled = true;
+        btnTentarNovamente.disabled = true;
     }
 
     function preencherHTMLcomQuestaoAtual(index) {
-        habilitarAlternativas(true)
-        const questaoAtual = listaDeQuestoes[index]
-        numeroDaQuestaoAtual = index
-        console.log("questaoAtual")
-        console.log(questaoAtual)
-        document.getElementById("spanNumeroDaQuestaoAtual").innerHTML = Number(index) + 1 // ajustando porque o index começa em 0
+        habilitarAlternativas(true);
+        const questaoAtual = listaDeQuestoes[index];
+        numeroDaQuestaoAtual = index;
+
+        document.getElementById("spanNumeroDaQuestaoAtual").innerHTML = Number(index) + 1;
         document.getElementById("spanQuestaoExibida").innerHTML = questaoAtual.pergunta;
         document.getElementById("labelOpcaoUm").innerHTML = questaoAtual.alternativaA;
         document.getElementById("labelOpcaoDois").innerHTML = questaoAtual.alternativaB;
@@ -357,102 +337,89 @@ if (!sessionStorage.ID_USUARIO) {
     }
 
     function submeter() {
-        const options = document.getElementsByName("option"); // recupera alternativas no html
-
-        let hasChecked = false
+        const options = document.getElementsByName("option");
+        let hasChecked = false;
         for (let i = 0; i < options.length; i++) {
             if (options[i].checked) {
-                hasChecked = true
-                break
+                hasChecked = true;
+                break;
             }
         }
-
         if (!hasChecked) {
-            alert("Não há alternativas escolhidas. Escolha uma opção.")
+            alert("Não há alternativas escolhidas. Escolha uma opção.");
         } else {
-            btnSubmeter.disabled = true
-            btnProx.disabled = false
-
-            habilitarAlternativas(false)
-
-            checarResposta()
+            btnSubmeter.disabled = true;
+            btnProx.disabled = false;
+            habilitarAlternativas(false);
+            checarResposta();
         }
     }
 
     function habilitarAlternativas(trueOrFalse) {
-        let opcaoEscolhida = trueOrFalse ? false : true
-
-        primeiraOpcao.disabled = opcaoEscolhida
-        segundaOpcao.disabled = opcaoEscolhida
-        terceiraOpcao.disabled = opcaoEscolhida
-        quartaOpcao.disabled = opcaoEscolhida
-
+        let opcaoEscolhida = trueOrFalse ? false : true;
+        primeiraOpcao.disabled = opcaoEscolhida;
+        segundaOpcao.disabled = opcaoEscolhida;
+        terceiraOpcao.disabled = opcaoEscolhida;
+        quartaOpcao.disabled = opcaoEscolhida;
     }
 
     function avancar() {
-        btnProx.disabled = true
-        btnSubmeter.disabled = false
-
-        desmarcarRadioButtons()
+        btnProx.disabled = true;
+        btnSubmeter.disabled = false;
+        desmarcarRadioButtons();
 
         if (numeroDaQuestaoAtual < quantidadeDeQuestoes - 1) {
-            preencherHTMLcomQuestaoAtual(numeroDaQuestaoAtual)
+            preencherHTMLcomQuestaoAtual(numeroDaQuestaoAtual);
         } else if (numeroDaQuestaoAtual == quantidadeDeQuestoes - 1) {
-            alert("A próxima questão é a última, capricha!!")
-            preencherHTMLcomQuestaoAtual(numeroDaQuestaoAtual)
+            alert("A próxima questão é a última, capricha!!");
+            preencherHTMLcomQuestaoAtual(numeroDaQuestaoAtual);
         } else {
-            finalizarJogo()
+            finalizarJogo();
         }
-        limparCoresBackgroundOpcoes()
+        limparCoresBackgroundOpcoes();
     }
 
     function tentarNovamente() {
-        // atualiza a página
-        window.location.reload()
+        window.location.reload();
     }
 
     function checarResposta() {
-        const questaoAtual = listaDeQuestoes[numeroDaQuestaoAtual] // questão atual 
-        const respostaQuestaoAtual = questaoAtual.alternativaCorreta // qual é a resposta correta da questão atual
-
-        const options = document.getElementsByName("option"); // recupera alternativas no html
-
-        let alternativaCorreta = null // variável para armazenar a alternativa correta
+        const questaoAtual = listaDeQuestoes[numeroDaQuestaoAtual];
+        const respostaQuestaoAtual = questaoAtual.alternativaCorreta;
+        const options = document.getElementsByName("option");
+        let alternativaCorreta = null;
 
         options.forEach((option) => {
             if (option.value === respostaQuestaoAtual) {
-                console.log("alternativaCorreta está no componente: " + alternativaCorreta)
-                alternativaCorreta = option.labels[0].id
+                alternativaCorreta = option.labels[0].id;
             }
-        })
+        });
 
-        // verifica se resposta assinalada é correta
         options.forEach((option) => {
             if (option.checked === true && option.value === respostaQuestaoAtual) {
-                document.getElementById(alternativaCorreta).classList.add("text-success-with-bg")
-                pontuacaoFinal++
-                certas++
-                document.getElementById("spanCertas").innerHTML = certas
-                numeroDaQuestaoAtual++
+                document.getElementById(alternativaCorreta).classList.add("text-success-with-bg");
+                pontuacaoFinal++;
+                certas++;
+                document.getElementById("spanCertas").innerHTML = certas;
+                numeroDaQuestaoAtual++;
             } else if (option.checked && option.value !== respostaQuestaoAtual) {
-                const wrongLabelId = option.labels[0].id
-
-                document.getElementById(wrongLabelId).classList.add("text-danger-with-bg")
-                document.getElementById(alternativaCorreta).classList.add("text-success-with-bg")
-                tentativaIncorreta++
-                erradas++
-                document.getElementById("spanErradas").innerHTML = erradas
-                numeroDaQuestaoAtual++
+                const wrongLabelId = option.labels[0].id;
+                document.getElementById(wrongLabelId).classList.add("text-danger-with-bg");
+                document.getElementById(alternativaCorreta).classList.add("text-success-with-bg");
+                tentativaIncorreta++;
+                erradas++;
+                document.getElementById("spanErradas").innerHTML = erradas;
+                numeroDaQuestaoAtual++;
             }
-        })
+        });
     }
 
     function limparCoresBackgroundOpcoes() {
         const options = document.getElementsByName("option");
         options.forEach((option) => {
-            document.getElementById(option.labels[0].id).classList.remove("text-danger-with-bg")
-            document.getElementById(option.labels[0].id).classList.remove("text-success-with-bg")
-        })
+            document.getElementById(option.labels[0].id).classList.remove("text-danger-with-bg");
+            document.getElementById(option.labels[0].id).classList.remove("text-success-with-bg");
+        });
     }
 
     function desmarcarRadioButtons() {
@@ -463,39 +430,74 @@ if (!sessionStorage.ID_USUARIO) {
     }
 
     function finalizarJogo() {
-        let textoParaMensagemFinal = null
-        let classComCoresParaMensagemFinal = null
-        const porcentagemFinalDeAcertos = pontuacaoFinal / quantidadeDeQuestoes
+        let textoParaMensagemFinal = null;
+        let classComCoresParaMensagemFinal = null;
+        const porcentagemFinalDeAcertos = pontuacaoFinal / quantidadeDeQuestoes;
 
         if (porcentagemFinalDeAcertos <= 0.3) {
-            textoParaMensagemFinal = "Vish, você não é Palmeirense sai daqui!"
-            classComCoresParaMensagemFinal = "text-danger-with-bg"
-        }
-        else if (porcentagemFinalDeAcertos > 0.3 && porcentagemFinalDeAcertos < 0.76) {
-            textoParaMensagemFinal = "Hummmm, parece que você é um infiltrado hein"
-            classComCoresParaMensagemFinal = "text-warning-with-bg"
-        }
-        else if (porcentagemFinalDeAcertos >= 0.76) {
-            textoParaMensagemFinal = "Avanti Palestra, você é um dos meus"
-            classComCoresParaMensagemFinal = "text-success-with-bg"
+            textoParaMensagemFinal = "Vish, você não é Palmeirense sai daqui!";
+            classComCoresParaMensagemFinal = "text-danger-with-bg";
+        } else if (porcentagemFinalDeAcertos > 0.3 && porcentagemFinalDeAcertos < 0.76) {
+            textoParaMensagemFinal = "Hummmm, parece que você é um infiltrado hein";
+            classComCoresParaMensagemFinal = "text-warning-with-bg";
+        } else if (porcentagemFinalDeAcertos >= 0.76) {
+            textoParaMensagemFinal = "Avanti Palestra, você é um dos meus";
+            classComCoresParaMensagemFinal = "text-success-with-bg";
         }
 
-        textoParaMensagemFinal += "<br> Você acertou " + Math.round((porcentagemFinalDeAcertos) * 100) + "% das questões"
+        textoParaMensagemFinal += "<br> Você acertou " + Math.round((porcentagemFinalDeAcertos) * 100) + "% das questões";
 
+        document.getElementById('msgFinal').innerHTML = textoParaMensagemFinal;
+        document.getElementById('msgFinal').classList.add(classComCoresParaMensagemFinal);
+        document.getElementById('spanPontuacaoFinal').innerHTML = pontuacaoFinal;
+        
+        document.getElementById('jogo').classList.add("text-new-gray");
 
-        document.getElementById('msgFinal').innerHTML = textoParaMensagemFinal
-        document.getElementById('msgFinal').classList.add(classComCoresParaMensagemFinal)
-        document.getElementById('spanPontuacaoFinal').innerHTML = pontuacaoFinal
-        document.getElementById('desempenho').style.display = "flex"
-        document.getElementById('jogo').classList.add("text-new-gray")
+        btnProx.disabled = true;
+        btnSubmeter.disabled = true;
+        btnTentarNovamente.disabled = false;
 
-        btnProx.disabled = true
-        btnSubmeter.disabled = true
-        // btnConcluir.disabled = true
-        btnTentarNovamente.disabled = false
+        var idUsuario = sessionStorage.ID_USUARIO;
 
+        if (idUsuario > 0) {
+            
+            desempenho(pontuacaoFinal, erradas, idUsuario);
+        } else {
+            console.log("Usuário não logado. Placar não será salvo.");
+        }
     }
-    function desempenho (){
-    
+
+    function desempenho(pontuacao, erros, idUsuario) {
+        
+        document.getElementById('msgFinal').innerHTML += "<br><br><b>Salvando resultado... aguarde...</b>";
+
+        fetch("/quiz/registrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                pontuacaoServer: pontuacao,
+                errosServer: erros,
+                idUsuarioServer: idUsuario
+            })
+        })
+        .then(function (resposta) {
+            console.log("Resposta da API:", resposta);
+
+            if (resposta.ok) {
+                
+                alert("Veja seus resultados apertando no botão de desempenho");
+                document.getElementById('desempenho').style.display = "flex";
+                
+            } else {
+                alert("Erro ao salvar o resultado! Verifique o console do VS Code.");
+                console.error("Erro ao salvar. Status:", resposta.status);
+            }
+        })
+        .catch(function (erro) {
+            console.log("Erro fetch:", erro);
+            alert("Erro de conexão com a API.");
+        });
     }
 </script>

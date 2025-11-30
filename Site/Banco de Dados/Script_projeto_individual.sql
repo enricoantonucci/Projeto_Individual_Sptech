@@ -25,3 +25,14 @@ FOREIGN KEY (fk_idUsuario) REFERENCES usuario(id_usuario),
 FOREIGN KEY (fk_idQuestoes) REFERENCES questoes(id_questoes),
 FOREIGN KEY (fk_idQuiz) REFERENCES quiz(id_quiz)
 );
+
+CREATE TABLE tentativa_quiz (
+    id_tentativa INT PRIMARY KEY AUTO_INCREMENT,
+    fk_usuario INT,
+    pontuacao INT,
+    erros INT,
+    dt_hora DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (fk_usuario) REFERENCES usuario(id_usuario)
+);
+
+SELECT * FROM tentativa_quiz;
