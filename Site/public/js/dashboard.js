@@ -109,7 +109,7 @@ function criarGraficoPizza(acertos, erros) {
                 hoverOffset: 4
             }]
         },
-        options: { responsive: true, maintainAspectRatio: false }
+        options: { responsive: false, maintainAspectRatio: false }
     });
 }
 

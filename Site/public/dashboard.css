@@ -213,11 +213,10 @@
     font-size: 20px;
       padding: 10px;
       font-family: "myriad-pro", sans-serif;
-      color: #ffffff;
+      color: rgb(65, 105, 17);
       text-decoration: none;
       display: flex;
       justify-content: start;
-      text-shadow: 1px 1px 1px black;
 }
 
 .graficos canvas {
@@ -232,6 +231,10 @@
 }
 
 .grafico1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     width: 440px;
     height: 100%;
     background-color: rgb(255, 242, 0);
@@ -239,12 +242,20 @@
 }
 
 .grafico2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
     width: 440px;
     height: 100%;
     background-color: rgb(255, 242, 0);
     border-radius: 5px;
 }
 
+.graficoBar {
+  height: 400px;
+  width: 350px;
+}
   
   .footer {
     display: flex;
