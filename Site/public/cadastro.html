@@ -101,36 +101,54 @@
 
 <script>
 
-  // Array para armazenar empresas cadastradas para validação de código de ativação let listaEmpresasCadastradas = [];
 
-  function cadastrar() {
-    // aguardar();
+    function cadastrar() {
 
-    //Recupere o valor da nova input pelo nome do id
-    // Agora vá para o método fetch logo abaixo
-    var nomeVar = nome_input.value;
-    var emailVar = email_input.value;
-    var senhaVar = senha_input.value;
-    var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var nomeVar = nome_input.value;
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var caracteresEspeciais = ['!', '@', '#', '$', '%', '&', '*', '?', ':', ';', '.', ',', '<', '>', '/', '\\', '|', '{', '}', '[', ']', '(', ')', '-', '_', '+', '='];
+        var temCaractereEspecial = false;
+        
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+            cardErro.style.display = "block";
+            mensagem_erro.innerHTML = "Preencha todos os campos!";
 
-    // Verificando se há algum campo em branco
-    if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
-      cardErro.style.display = "block";
-      mensagem_erro.innerHTML =
-        "Preencha todos os campos!";
+           finalizarAguardar(); 
+            return false;
+        } 
+        
+        if (emailVar.indexOf("@") == -1) {
+            cardErro.style.display = "block";
+            mensagem_erro.innerHTML = "Erro! O seu email deve conter '@'";
 
-      finalizarAguardar();
-      return false;
-    }if (emailVar.indexOf("@") == -1) {
-      cardErro.style.display = "block";
-      mensagem_erro.innerHTML =
-        "Erro! O seu email deve conter '@' ";
+            finalizarAguardar(); 
+            return false;
+        }
 
-      finalizarAguardar();
-      return false;
-    } else {
-      setInterval(sumirMensagem, 5000);
-    }
+        if (senhaVar != confirmacaoSenhaVar) {
+            cardErro.style.display = "block";
+            mensagem_erro.innerHTML = "As senhas digitadas não são iguais!";
+
+            finalizarAguardar(); 
+            return false;
+        }
+        for (let i = 0; i < caracteresEspeciais.length; i++) {
+            if (senhaVar.includes(caracteresEspeciais[i])) { 
+                temCaractereEspecial = true;
+                break;
+            }
+        }
+
+        if (!temCaractereEspecial) {
+            cardErro.style.display = "block";
+            mensagem_erro.innerHTML = "A senha deve incluir ao menos um caractere especial (ex: !, @, #, $)";
+
+            finalizarAguardar(); 
+            return false;
+        }
+        setInterval(sumirMensagem, 5000);
 
     // Enviando o valor da nova input
     fetch("/usuarios/cadastrar", {
